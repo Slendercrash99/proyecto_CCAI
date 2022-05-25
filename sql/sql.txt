@@ -1,0 +1,72 @@
+create database proyecto;
+use proyecto;
+
+create table profesores(
+profesor_id int not null AUTO_INCREMENT,
+nom_prof varchar (50),
+ape_pat varchar (50),
+ape_mat varchar (50),
+clave int (8),
+correo varchar (50),
+contraseña int (12),
+division varchar (20),
+direccion varchar (150),
+telefono_cel int (12),
+PRIMARY KEY (profesor_id)
+);
+
+create table alumnos(
+alumno_id int primary key not null,
+nom_alu varchar (50),
+ape_pat varchar (50),
+ape_mat varchar (50),
+contraseña int (8),
+matricula int (9),
+carrera varchar (50),
+serv varchar (50),
+correo varchar (50),
+direccion varchar (150),
+telefono_cel int (12));
+
+
+create table materiales(
+materiales_id int,
+nom_material varchar (50),
+total_material int (5),
+prestamo_uso int (5),
+material_ent int (5),
+fecha_ent date);
+
+
+create table alumnos_asignados(
+alumnos_asignados int,
+nom_alu varchar (50),
+ape_pat varchar (50),
+ape_mat varchar (50),
+contraseña int (8),
+matricula int (9),
+serv varchar (50));
+
+create table proyectos(
+proyecto_id int,
+nom_proy varchar (50),
+carac_proy varchar (4000),
+obj_gen varchar (400),
+obj_esp varchar (400));
+
+
+create table documentos(
+documento_id int,
+tipo varchar (50),
+descripcion varchar (50));
+
+
+create table asesores(
+asesor_id int,
+ape_pat varchar (50),
+ape_mat varchar (50),
+clave int (8),
+correo varchar (50),
+division varchar (20),
+direccion varchar (150),
+telefono_cel int (12));
