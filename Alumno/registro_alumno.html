@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro de alumnos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Registro_A.css">
+</head>
+<body>
+    <form method="post">
+    	<h1>Registro del alumno</h1>
+    	<input type="text" name="nom_alu" placeholder="Nombre(s)">
+        <input type="text" name="ape_pat" placeholder="Apellido Paterno">
+        <input type="text" name="ape_mat" placeholder="Apellido Materno">
+        <input type="text" name="contraseña" placeholder="Contraseña">
+        <input type="text" name="matricula" placeholder="Matricula del alumno">
+        <input type="text" name="carrera" placeholder="Division de la carrera">
+        <input type="text" name="serv" placeholder="Servicio a prestar">
+        <input type="email" name="email" placeholder="Correo Institucional">
+        <input type="text" name="direccion" placeholder="Direccion del alumno">
+        <input type="text" name="telefono_cel" placeholder="Telefono o celular del alumno">
+    	<input type="submit" name="register">
+    </form>
+        <?php 
+        include("registrar.php");
+        ?>
+</body>
+</html>
